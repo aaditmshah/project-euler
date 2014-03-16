@@ -11,7 +11,7 @@ if [ $? -ne 0 ]; then
     exit $error
 fi
 
-sed -r s/#[0-9]+/#$1/ README.md > README.md
+sed -i -r s/#[0-9]+/#$1/ README.md
 
 git add README.md answers.md.secret src/Problem$1.hs.secret
 
