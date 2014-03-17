@@ -8,7 +8,7 @@ openssl aes-256-cbc -salt -in answers.md -out answers.md.secret
 
 if [ $? -ne 0 ]; then
     git checkout -- answers.md
-    exit $error
+    exit 1
 fi
 
 sed -i -r s/#[0-9]+/#$1/ README.md
