@@ -1,0 +1,2 @@
+*.md.gpg linguist-language=Markdown
+*.hs.gpg linguist-language=Haskell
