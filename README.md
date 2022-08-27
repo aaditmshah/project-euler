@@ -9,7 +9,7 @@ My solutions to [Project Euler](http://projecteuler.net/) problems in Haskell. A
 All the solutions are encrypted using the AES256 cipher. Hence you can use the following command to decrypt them:
 
 ```bash
-gpg2 --output <filename>.gpg --decrypt <filename>
+gpg2 --output <filename> --decrypt <filename>.gpg
 ```
 
 You will then be prompted to enter the password required to decrypt the file.
