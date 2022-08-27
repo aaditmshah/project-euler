@@ -7,8 +7,8 @@ echo "$2" >> answers.md
 gpg2 --cipher-algo AES256 --output answers.md.gpg --symmetric answers.md
 
 if [ $? -ne 0 ]; then
-    git checkout -- answers.md.gpg
-    exit 1
+  git checkout -- answers.md.gpg
+  exit 1
 fi
 
 sed -i -r s/#[0-9]+/#$1/ README.md
